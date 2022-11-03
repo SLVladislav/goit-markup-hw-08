@@ -3,9 +3,13 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--brand-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-modal__label {
@@ -28,7 +32,8 @@
   padding: 11px 12px;
   padding-left: 42px;
   margin-bottom: 10px;
-  min-width: 448px;
+  // min-width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -84,13 +89,19 @@
   display: flex;
   align-items: center;
   gap: 9px;
-
+  font-size: 12px;
+  line-height: 1.16;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 370px;
 
   color: var(--tittle-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 425px;
+  }
 }
 
 .form-modal__chek:checked + .form-modal__icon span {

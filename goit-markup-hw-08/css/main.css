@@ -70,7 +70,6 @@ img {
 }
 
 .conteiner {
-  width: 100%;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -99,8 +98,10 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 .header__gruop {
   display: none;
@@ -231,7 +232,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 480px;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -794,8 +795,10 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
+@media screen and (min-width: 768px) {
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
 }
 
 .is-hidden {
@@ -806,8 +809,7 @@ img {
 
 .modal {
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -816,6 +818,12 @@ img {
   background-color: var(--container-hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__btn {
   position: absolute;
@@ -844,9 +852,15 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--brand-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-modal__label {
@@ -868,7 +882,7 @@ img {
   padding: 11px 12px;
   padding-left: 42px;
   margin-bottom: 10px;
-  min-width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -936,11 +950,19 @@ img {
   display: flex;
   align-items: center;
   gap: 9px;
+  font-size: 12px;
+  line-height: 1.16;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 370px;
   color: var(--tittle-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__icon {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 425px;
+  }
 }
 
 .form-modal__chek:checked + .form-modal__icon span {
