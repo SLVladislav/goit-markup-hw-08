@@ -1,0 +1,33 @@
+.apps {
+  display: flex;
+  &__img {
+    margin-right: 30px;
+  }
+
+  &__img:last-child {
+    margin-right: 0;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--container-hero-color);
+  }
+}

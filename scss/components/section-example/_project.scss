@@ -1,0 +1,13 @@
+.project {
+  display: none;
+  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  &__header {
+    margin-bottom: 50px;
+    @extend %header;
+
+    color: var(--brand-text-color);
+  }
+}
