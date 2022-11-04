@@ -6,9 +6,7 @@
     justify-content: space-between;
   }
   &__logo {
-    @media screen and (min-width: 768px) {
-      margin-right: 93px;
-    }
+    margin-right: 93px;
   }
   &__gruop {
     display: none;
