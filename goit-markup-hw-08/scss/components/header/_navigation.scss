@@ -46,7 +46,6 @@
   }
 }
 .navigation__button {
-  display: inline-flex;
   padding: 0;
   margin: 0;
   background-color: transparent;
@@ -57,7 +56,4 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
-}
-.navigation__button .navigation__close {
-  display: none;
 }
