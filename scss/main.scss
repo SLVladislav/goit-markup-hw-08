@@ -1,0 +1,28 @@
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/plaseholders";
+@import "./utils/mixin";
+
+@import "./base/body";
+@import "./base/reset";
+@import "./base/conteiner";
+
+@import "./components/header/header";
+@import "./components/header/navigation";
+@import "./components/header/mob-menu";
+@import "./components/hero/hero-section";
+@import "./components/section-example/section-excample";
+@import "./components/section-example/project";
+@import "./components/section-example/info";
+@import "./components/section-example/apps";
+@import "./components/team/team-section";
+@import "./components/team/social";
+@import "./components/team/section-developer";
+@import "./components/company/company";
+@import "./components/footer/footer";
+@import "./components/footer/form-footer";
+@import "./components/portfolio/projects";
+@import "./components/portfolio/main-section";
+@import "./components/portfolio/btn";
+@import "./components/modal/modal";
+@import "./components/modal/form-modal";
