@@ -6,6 +6,9 @@
   background-color: var(--container-hero-color);
   padding: 48px 40px;
   z-index: 1;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 
   > .conteiner {
     height: 100%;
@@ -23,7 +26,16 @@
   margin: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
+.mob-menu__icon {
+  fill: #212121;
+}
+.mob-menu__icon:hover,
+.mob-menu__icon:focus {
+  fill: var(--tittle-buttom-color);
+}
+
 .mob-menu__close {
 }
 .mob-menu__list {
