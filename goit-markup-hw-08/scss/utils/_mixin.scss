@@ -1,4 +1,0 @@
-@mixin transition($color: color, $box: box-shadow) {
-  transition: background-color 250ms var(--timing-function),
-    $color 250ms var(--timing-function), $box 250ms var(--timing-function);
-}
