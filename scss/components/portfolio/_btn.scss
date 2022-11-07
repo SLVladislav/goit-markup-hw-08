@@ -1,9 +1,15 @@
 .section-btn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   &__buttons {
     border-style: none;
