@@ -389,7 +389,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%;
+  max-width: 480px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -398,7 +398,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .first-section {
-    min-width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-tablet.jpg);
   }
 }
@@ -976,8 +976,7 @@ img {
 
 .modal {
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -986,6 +985,16 @@ img {
   background-color: var(--container-hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 .modal__btn {
   position: absolute;
@@ -1014,9 +1023,16 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--brand-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-modal__label {
@@ -1038,11 +1054,16 @@ img {
   padding: 11px 12px;
   padding-left: 42px;
   margin-bottom: 10px;
-  min-width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   transition: border 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__input {
+    width: 448px;
+  }
 }
 .form-modal__input:focus {
   border: 1px solid var(--tittle-buttom-color);
@@ -1093,6 +1114,7 @@ img {
 }
 
 .form-modal__checkbox {
+  width: 370px;
   margin-left: 13px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -1101,16 +1123,27 @@ img {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .form-modal__checkbox {
+    width: 425px;
+  }
+}
 
 .form-modal__icon {
   display: flex;
   align-items: center;
   gap: 9px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__icon {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-modal__chek:checked + .form-modal__icon span {

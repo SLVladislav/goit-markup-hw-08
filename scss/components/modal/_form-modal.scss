@@ -3,9 +3,14 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--brand-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-modal__label {
@@ -28,11 +33,14 @@
   padding: 11px 12px;
   padding-left: 42px;
   margin-bottom: 10px;
-  min-width: 448px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   transition: border 250ms var(--timing-function);
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
   &:focus {
     border: 1px solid var(--tittle-buttom-color);
   }
@@ -70,6 +78,7 @@
 }
 
 .form-modal__checkbox {
+  width: 370px;
   margin-left: 13px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -78,6 +87,9 @@
   letter-spacing: 0.03em;
 
   color: var(--tittle-text-color);
+  @media screen and (min-width: 1200px) {
+    width: 425px;
+  }
 }
 
 .form-modal__icon {
@@ -86,11 +98,16 @@
   gap: 9px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--tittle-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-modal__chek:checked + .form-modal__icon span {
