@@ -576,7 +576,7 @@
               rows="5"
             ></textarea>
           </div>
-          <div class="form-modal__checkbox">
+          <label for="privaty" class="form-modal__checkbox">
             <input
               class="form-modal__chek excample"
               type="checkbox"
@@ -584,15 +584,16 @@
               id="privaty"
               value="true"
             />
-            <label for="privaty" class="form-modal__icon">
-              <span
-                ><svg width="16" height="15">
-                  <use href="images/icons.svg#icon-check"></use></svg
-              ></span>
+            <span class="form-modal__icon"
+              ><svg width="16" height="15">
+                <use href="images/icons.svg#icon-check"></use></svg
+            ></span>
+            <span class="form-modal__text">
               Погоджуюся з розсилкою та приймаю
-              <a class="form-modal__link">Умови договору</a>
-            </label>
-          </div>
+              <a class="form-modal__link">Умови договору</a></span
+            >
+          </label>
+
           <button class="form-modal__btn" type="submit">Відправити</button>
         </form>
       </div>
