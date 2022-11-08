@@ -214,19 +214,34 @@
           <ul class="apps list">
             <li class="apps__img">
               <div class="apps__box">
-                <img src="./images/box1.jpg" alt="ТЕХНОЛОГІЇ" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                  />
+                  <img src="./images/box1.jpg" alt="ТЕХНОЛОГІЇ" width="370" />
+                </picture>
                 <h3 class="apps__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="apps__img">
               <div class="apps__box">
-                <img src="./images/box2.jpg" alt="ТЕХНОЛОГІЇ" width="370" />
+                <img
+                  srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg"
+                  alt="ТЕХНОЛОГІЇ"
+                  width="370"
+                />
                 <h3 class="apps__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="apps__img">
               <div class="apps__box">
-                <img src="./images/box3.jpg" alt="ТЕХНОЛОГІЇ" width="370" />
+                <img
+                  srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg"
+                  alt="ТЕХНОЛОГІЇ"
+                  width="370"
+                />
                 <h3 class="apps__title">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -239,7 +254,34 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="section-developer list">
             <li class="section-developer__images">
-              <img src="./images/Ihor.jpg" alt="Розробник" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igor-desk.jpg    1x,
+                    ./images/team/igor-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-tab.jpg    1x,
+                    ./images/team/igor-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-mob.jpg    1x,
+                    ./images/team/igor-mob@2x.jpg 2x
+                  "
+                  media="(man-width:767px)"
+                />
+                <img
+                  src="./images/team/igor-desk.jpg"
+                  alt="Розробник"
+                  width="450"
+                />
+              </picture>
               <div class="section-developer__thumb">
                 <h3 class="section-developer__item">Ігор Дем'яненко</h3>
                 <p lang="en" class="section-developer__title">

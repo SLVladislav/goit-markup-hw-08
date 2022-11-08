@@ -13,6 +13,7 @@
   --icons-color: #afb1b8;
   --icons-bgr-color: #ffffff;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .excample {
@@ -390,23 +391,38 @@ img {
   margin-right: auto;
   text-align: center;
   max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-mob.jpg);
+  background-image: var(--bg-gradient), url(../images/Hero-section/Hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--content-section-color);
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .first-section {
+    background-image: var(--bg-gradient), url(../images/Hero-section/Hero-mob@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .first-section {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-tablet.jpg);
+    background-image: var(--bg-gradient), url(../images/Hero-section/Hero-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: var(--bg-gradient), url(../images/Hero-section/Hero-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .first-section {
     padding: 200px 0;
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-desktop.jpg);
+    background-image: var(--bg-gradient), url(../images/Hero-section/Hero-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: var(--bg-gradient), url(../images/Hero-section/Hero-desktop@2x.jpg);
   }
 }
 .first-section__name {
